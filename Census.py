@@ -7,7 +7,7 @@ wb=openpyxl.load_workbook('censuspopdata.xlsx')	# create workbook object.
 
 active_sheet=wb.active.title # to get active worksheet in workbook.
 
-my_dict={} # dictionary to count and store no of times census of a country take place.
+my_dict={} # dictionary to count and store no of times census of a country took place.
 count=0
 li=[]  # list of all countries.
 
@@ -38,7 +38,7 @@ file_obj=open('/home/kapil/Desktop/Population.txt','a') # to store Countries and
 
 
 for key in my_dict.keys():
-	file_obj.write("Population of "+str(key)+' is: '+str(population_dict[key])+"\n\n\n")
+	file_obj.write("Population of "+str(key)+' is: '+str(population_dict[key])+"\n\n")
 
 file_obj.close()	
 		
